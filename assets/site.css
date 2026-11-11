@@ -47,3 +47,4 @@ header,main,footer{position:relative;z-index:1}
 .badgelink{display:inline-flex;align-items:center;line-height:0;border-radius:8px;transition:transform .2s}.badgelink img{height:34px;width:auto;border-radius:7px}.badgelink:hover{transform:translateY(-2px)}
 .platforms{align-items:center}
 .pill.yt{padding:6px 14px;background:#fff}.pill.yt img{height:18px;width:auto;display:block}.pill.yt:hover{background:#fff;border-color:#984329}
+.pill .ico.sq{border-radius:5px}.pill .ico.rect{width:28px;border-radius:4px}
