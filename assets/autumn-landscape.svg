@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6d9a8"/>
+      <stop offset=".45" stop-color="#eeaa6a"/>
+      <stop offset=".75" stop-color="#d9784a"/>
+      <stop offset="1" stop-color="#b85a38"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="1120" cy="250" r="190" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff4d6"/>
+      <stop offset=".25" stop-color="#ffe2a3" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#ffd08a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lake" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e9a066"/>
+      <stop offset=".5" stop-color="#9c6a55"/>
+      <stop offset="1" stop-color="#3f4a48"/>
+    </linearGradient>
+    <linearGradient id="mist" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbe7c6" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fbe7c6" stop-opacity=".55"/>
+    </linearGradient>
+    <g id="tree">
+      <rect x="-3" y="-10" width="6" height="40" fill="#3b2418"/>
+      <circle cx="0" cy="-30" r="26"/>
+      <circle cx="-18" cy="-14" r="18"/>
+      <circle cx="18" cy="-16" r="19"/>
+      <circle cx="2" cy="-52" r="17"/>
+    </g>
+    <g id="pine">
+      <rect x="-3" y="0" width="6" height="22" fill="#2e2018"/>
+      <path d="M0-70 22-20H12L28 4H-28l16-24H-22z"/>
+    </g>
+  </defs>
+  <rect width="1600" height="600" fill="url(#sky)"/>
+  <circle cx="1120" cy="250" r="190" fill="url(#sun)"/>
+  <circle cx="1120" cy="250" r="46" fill="#fff1cf"/>
+  <!-- birds -->
+  <g fill="none" stroke="#6b3a24" stroke-width="3" stroke-linecap="round" opacity=".6">
+    <path d="M300 140q12-10 24 0q12-10 24 0"/>
+    <path d="M370 112q9-8 18 0q9-8 18 0"/>
+    <path d="M250 175q8-7 16 0q8-7 16 0"/>
+  </g>
+  <!-- far hills -->
+  <path d="M0 330 140 290 300 315 470 270 640 305 820 262 990 300 1160 268 1330 300 1480 275 1600 292V600H0z" fill="#c9785a" opacity=".75"/>
+  <path d="M0 360 180 320 360 352 560 310 760 345 960 318 1160 350 1380 314 1600 340V600H0z" fill="#a85a41" opacity=".85"/>
+  <!-- lake -->
+  <rect y="380" width="1600" height="220" fill="url(#lake)"/>
+  <g stroke="#ffe7b8" stroke-linecap="round" opacity=".55">
+    <path d="M1060 400h120" stroke-width="4"/>
+    <path d="M1030 420h180" stroke-width="3"/>
+    <path d="M1075 442h90" stroke-width="3"/>
+    <path d="M1010 466h220" stroke-width="2"/>
+  </g>
+  <!-- mid shore with trees -->
+  <path d="M0 395C120 370 260 365 400 380S640 392 720 386V420H0z" fill="#5a3324"/>
+  <g fill="#c4521f">
+    <use href="#tree" x="60" y="368"/>
+    <use href="#tree" x="190" y="362" fill="#e08a2e"/>
+    <use href="#tree" x="300" y="372" fill="#a8371d"/>
+    <use href="#tree" x="430" y="376" fill="#d9a03a"/>
+    <use href="#tree" x="560" y="380"/>
+  </g>
+  <g fill="#38412f">
+    <use href="#pine" x="120" y="372"/>
+    <use href="#pine" x="365" y="374"/>
+    <use href="#pine" x="500" y="378"/>
+  </g>
+  <path d="M1600 400C1480 378 1380 376 1290 388V420H1600z" fill="#5a3324"/>
+  <g fill="#d36d26">
+    <use href="#tree" x="1360" y="382"/>
+    <use href="#tree" x="1480" y="375" fill="#b8401f"/>
+    <use href="#tree" x="1570" y="380" fill="#e3a43c"/>
+  </g>
+  <use href="#pine" x="1420" y="384" fill="#38412f"/>
+  <rect y="360" width="1600" height="80" fill="url(#mist)"/>
+  <!-- foreground bank -->
+  <path d="M0 520C200 490 380 500 520 530S800 590 900 600H0z" fill="#3c2419"/>
+  <path d="M1600 540C1450 520 1300 540 1200 570S1080 600 1060 600H1600z" fill="#3c2419"/>
+  <g fill="#e07b2c" opacity=".9">
+    <ellipse cx="90" cy="560" rx="9" ry="4" transform="rotate(-20 90 560)"/>
+    <ellipse cx="160" cy="575" rx="8" ry="4" transform="rotate(25 160 575)" fill="#b8401f"/>
+    <ellipse cx="260" cy="550" rx="9" ry="4" transform="rotate(-35 260 550)" fill="#e3a43c"/>
+    <ellipse cx="1450" cy="575" rx="9" ry="4" transform="rotate(30 1450 575)"/>
+    <ellipse cx="1530" cy="560" rx="8" ry="4" transform="rotate(-15 1530 560)" fill="#e3a43c"/>
+  </g>
+</svg>
